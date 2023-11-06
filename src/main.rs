@@ -8,7 +8,7 @@ mod errors;
 
 // Few static varibles to be used in code
 static DEBUG: bool = false;
-static PREFIX: &'static str = "[cobalt]";
+static PREFIX: &'static str = "[cli-downloader]";
 
 fn main() {
     let matches = Command::new(env!("CARGO_PKG_NAME"))
