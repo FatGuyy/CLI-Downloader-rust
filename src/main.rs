@@ -12,10 +12,11 @@ static PREFIX: &'static str = "[cli-downloader]";
 
 fn main() {
     let matches = Command::new(env!("CARGO_PKG_NAME"))
-        .version(env!("CARGO_PKG_VERSION"))
-        .author(env!("CARGO_PKG_AUTHORS"))
-        .about(env!("CARGO_PKG_DESCRIPTION"))
+    .version(env!("CARGO_PKG_VERSION"))
+    .author(env!("CARGO_PKG_AUTHORS"))
+    .about(env!("CARGO_PKG_DESCRIPTION"))
         // mode
+        // Define the types of arguments and their names.
         .arg(
             Arg::new("mode")
                 .short('m')
